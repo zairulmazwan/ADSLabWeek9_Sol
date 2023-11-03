@@ -1,0 +1,11 @@
+City,London,Manchester,Paris,Madrid, Instanbul,Dubai,Kuala Lumpur,Singapore,Tokyo,Sydney
+London,0,1,0,0,1,0,1,0,1,0
+Manchester,1,0,0,0,1,0,1,1,0,0
+Paris,0,0,0,0,1,0,1,1,0,0
+Madrid,0,0,0,0,1,1,0,0,0,0
+Instanbul,1,1,1,1,0,0,1,1,1,0
+Dubai,0,0,0,1,0,0,1,1,0,1
+Kuala Lumpur,1,1,1,0,1,1,0,0,1,1
+Singapore,0,1,1,0,1,1,0,0,1,1
+Tokyo,1,0,0,0,1,0,1,1,0,1
+Sydney,0,0,0,0,0,1,1,1,1,0

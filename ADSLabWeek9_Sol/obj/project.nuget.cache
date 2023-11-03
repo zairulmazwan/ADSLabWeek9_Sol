@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "AvtQIVhgsAMac8nTqQH+BTg2H7vgArYl0i835RPwV9jcU6uOjE4sIOVLuUfUI5opnT+KQvasx/seF1MMG+dGqg==",
+  "success": true,
+  "projectFilePath": "/Users/zairulmazwan/Dotnet/ADSLabWeek9_Sol/ADSLabWeek9_Sol/ADSLabWeek9_Sol.csproj",
+  "expectedPackageFiles": [
+    "/Users/zairulmazwan/.nuget/packages/csvhelper/30.0.1/csvhelper.30.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
