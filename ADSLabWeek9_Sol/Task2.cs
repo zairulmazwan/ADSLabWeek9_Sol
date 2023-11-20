@@ -125,9 +125,9 @@
         public void createGraph() 
         {
             string [] cities = {"London","Manchester","Paris","Madrid","Istanbul","Dubai","Kuala Lumpur","Singapore","Tokyo","Sydney"};
-            int [,] data = Files.readData("Dataset.csv");
+            int [,] data = Files.readData("Dataset.csv"); //Reading the dataset
 
-            foreach(string city in cities)
+            foreach(string city in cities) //Create nodes for all cities in this loop
             {
                 City c = new City(city);
                 addNode(c);
@@ -135,21 +135,21 @@
 
             for (int i=0; i<cities.Length; i++) //reading the cities
             {
-                string city = cities[i];
+                string city = cities[i]; //getting the city's name
                 // Console.WriteLine(city);
 
-                for (int j=0; j<cities.Length; j++)
+                for (int j=0; j<cities.Length; j++) 
                 {
-                    if (i!=j)
+                    if (i!=j) //We need to avoid from reading the origin of the city
                     {
-                        int val = data[i,j];
+                        int val = data[i,j]; //Getting the values from the dataset
                         // Console.WriteLine(val);
                         // Console.WriteLine(cities[j]);
-                        if (val == 1)
+                        if (val == 1) //If there is a route
                         {
-                            City c1 = getNode(city);
-                            City c2 = getNode(cities[j]);
-                            setEdge(c1, c2);
+                            City c1 = getNode(city); //get the node for city from
+                            City c2 = getNode(cities[j]); //get the node for city to
+                            setEdge(c1, c2); //Setting the edge for the city
                         }
                     }
                 }
