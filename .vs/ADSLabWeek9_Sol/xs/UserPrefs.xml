@@ -1,27 +1,26 @@
 ﻿<Properties StartupConfiguration="{166DE7DF-D715-48E1-B1E8-099909AAC2E0}|Default">
-  <MonoDevelop.Ide.ItemProperties.ADSLabWeek9__Sol PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ADSLabWeek9_Sol/Files.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.ADSLabWeek9__Sol PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ADSLabWeek9_Sol/Graphs.cs">
     <Files>
-      <File FileName="ADSLabWeek9_Sol/Program.cs" Line="32" Column="21" />
+      <File FileName="ADSLabWeek9_Sol/Program.cs" />
       <File FileName="ADSLabWeek9_Sol/Graphs.cs" Line="81" Column="4" />
-      <File FileName="ADSLabWeek9_Sol/Files.cs" Line="22" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ADSLabWeek9_Sol" expanded="True">
             <Node name="ADSLabWeek9_Sol" expanded="True">
-              <Node name="Files.cs" selected="True" />
+              <Node name="Graphs.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
