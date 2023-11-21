@@ -45,6 +45,28 @@ public class Files
 		return data;
 	}
 
+	public static string [] getCities(string fileName)
+	{
+		string [] cities = null;
+		StreamReader sr = null;
+
+		if (File.Exists(fileName))
+		{
+			sr = new StreamReader(fileName);
+			string lines = sr.ReadLine();
+			string [] header = lines.Split(","); 
+			int len = header.Length;
+
+			cities = new string [len-1]; //we dont need the "City" header.
+			for (int i=1; i<header.Length; i++) //Read the first city until end
+			{
+				cities[i-1] = header[i];
+			}
+
+		}
+		return cities;
+	}
+
 	public static void printData (int [,] data)
 	{
 		for (int i=0; i<data.GetLength(0); i++)
@@ -54,6 +76,14 @@ public class Files
 				Console.Write(data[i,j]+" ");
 			}
 			Console.WriteLine();
+		}
+	}
+
+	public static void printHeader(string [] cities)
+	{
+		foreach(string city in cities)
+		{
+			Console.WriteLine(city);
 		}
 	}
 

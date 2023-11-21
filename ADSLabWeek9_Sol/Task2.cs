@@ -124,7 +124,8 @@
 	
         public void createGraph() 
         {
-            string [] cities = {"London","Manchester","Paris","Madrid","Istanbul","Dubai","Kuala Lumpur","Singapore","Tokyo","Sydney"};
+            //string [] cities = {"London","Manchester","Paris","Madrid","Istanbul","Dubai","Kuala Lumpur","Singapore","Tokyo","Sydney"};
+            string [] cities = Files.getCities(@"/Users/zairulmazwan/Dotnet/ADSLabWeek9_Sol/ADSLabWeek9_Sol/Dataset.csv");
             int [,] data = Files.readData("Dataset.csv"); //Reading the dataset
 
             foreach(string city in cities) //Create nodes for all cities in this loop
