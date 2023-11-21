@@ -29,11 +29,18 @@
 //graph.printNodes();
 //Console.WriteLine();
 
-//string filePath = "/Users/zairulmazwan/Dotnet/ADSLabWeek9_Sol/ADSLabWeek9_Sol/Dataset.csv";
-int [,] data = Files.readData(@"/Users/zairulmazwan/Dotnet/ADSLabWeek9_Sol/ADSLabWeek9_Sol/Dataset.csv");
+/*
+//Windows - Can use this to read the file
+string workingDirectory = Environment.CurrentDirectory;
+string projectDir = Directory.GetParent(workingDirectory).Parent.Parent.FullName;
+string filePath = "\\Dataset.csv";
+Console.WriteLine(projectDir+filePath);
+*/
+
+// int [,] data = Files.readData(@"/Users/zairulmazwan/Dotnet/ADSLabWeek9_Sol/ADSLabWeek9_Sol/Dataset.csv");
 // string [] c = Files.getCities(@"/Users/zairulmazwan/Dotnet/ADSLabWeek9_Sol/ADSLabWeek9_Sol/Dataset.csv");
 // Files.printHeader(c);
-Files.printData(data);
+// Files.printData(data);
 Task2 cities = new Task2();
 cities.createGraph();
 Console.WriteLine("Is there Kuala Lumpur in the graph? "+cities.containNode("Kuala Lumpur"));
