@@ -72,6 +72,42 @@ public class Graphs {
 	public void traverseBFS(int nodeValue) {
 		
 		//Write your code here
+		if(containNode(nodeValue))
+		{
+		    List<Node> nodes = new List<Node>();
+		    List<Node> visited = new List<Node>();
+		
+		    Node startNode = getNode(nodeValue);
+		    if (startNode == null)
+		    {
+		        Console.WriteLine("Node not found in the graph.");
+		        return;
+		    }
+		
+		    nodes.Add(startNode);
+		    visited.Add(startNode);
+		
+		    while (nodes.Count > 0)
+		    {
+		        Node currentNode = nodes[0];
+		        nodes.RemoveAt(0);
+		
+		        Console.Write(currentNode.value + " ");
+		
+		        foreach (Node neighbor in currentNode.edges)
+		        {
+		            if (!visited.Contains(neighbor))
+		            {
+		                nodes.Add(neighbor);
+		                visited.Add(neighbor);
+		            }
+		        }
+		    }
+		}
+		else
+		{
+		    Console.WriteLine("There is no node" + nodeValue);
+		}
 	}
 	
 	
